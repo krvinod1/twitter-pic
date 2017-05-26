@@ -1,0 +1,16 @@
+CREATE TABLE TWEETS(content varchar(140), created_at date DEFAULT now(), user_id varchar(20) );
+CREATE INDEX TWEETS_USER ON TWEETS(user_id);
+INSERT INTO TWEETS(  content, user_id) VALUES('foo content1', 'foo');
+INSERT INTO TWEETS(  content, user_id) VALUES('foo content2', 'foo');
+INSERT INTO TWEETS(  content, user_id ) VALUES('foo content3', 'foo');
+INSERT INTO TWEETS(  content, user_id ) VALUES('bar content1', 'bar');
+INSERT INTO TWEETS(  content, user_id ) VALUES('bar content2', 'bar');
+INSERT INTO TWEETS(  content, user_id ) VALUES('mike content1', 'mike');
+INSERT INTO TWEETS(  content, user_id ) VALUES('mike content', 'mike');
+INSERT INTO TWEETS(  content, user_id ) VALUES('tom content1', 'tom');
+INSERT INTO TWEETS(  content, user_id ) VALUES('tom content2', 'tom');
+INSERT INTO TWEETS(  content, user_id ) VALUES('tom content3', 'tom');
+INSERT INTO TWEETS(  content, user_id ) VALUES('tom content4', 'tom');
+INSERT INTO TWEETS(  content, user_id ) VALUES('tom content5', 'tom');
+INSERT INTO TWEETS(  content, user_id ) VALUES('tom content5', 'tom');
+INSERT INTO TWEETS(  content, user_id ) VALUES('tom content6', 'tom');
